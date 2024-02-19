@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+body {
+  background-image: url("../img/pattern-background-desktop.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+  z-index: 1;
+}
+.content {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  max-width: 320px;
+  width: 100%;
+  background-color: white;
+  margin: 100px auto;
+}
+.content .card-img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  max-width: 320px;
+  width: 100%;
+}
+.order-summary {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.order-summary h2 {
+  color: hsl(223, 47%, 23%);
+  font-size: 18px;
+  font-weight: 900;
+}
+.order-summary .info {
+  color: hsl(224, 23%, 55%);
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+}
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+  margin-top: 10px;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.icon img {
+  width: 32px;
+}
+.icon h5 {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  font-size: 12px;
+}
+.icon p {
+  color: hsl(224, 23%, 55%);
+  font-size: 12px;
+}
+.price a {
+  font-size: 10px;
+  color: hsl(245, 75%, 52%);
+  font-weight: 900;
+}
+.btn {
+  padding: 10px 0;
+  width: 100%;
+  margin-top: 20px;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  font-size: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.cancel {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 700;
+}
+@media screen and (max-width: 1000px) {
+  body {
+    background-image: url("../img/pattern-background-mobile.svg");
+  }
+}
